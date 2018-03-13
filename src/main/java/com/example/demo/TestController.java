@@ -25,8 +25,8 @@ public class TestController {
     }
 
     @RequestMapping(value = "/index4", method = RequestMethod.GET)
-    public String index4(HashMap<String,Object> map) {
-        map.put("hello","spring boot pu ni a mu");
-        return "index4";
+    public String index4() {
+//        map.put("hello","spring boot pu ni a mu");
+        return "/websocket";
     }
 }
